@@ -1,0 +1,134 @@
+.contectContainer{
+    /* width: 100%; */
+    height: 100vh;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+
+    
+   
+}
+@keyframes glow {
+    form{
+        
+        /* transform: scale(1); */
+    }to{
+
+        transform: scale(0.1);
+    }
+    
+}
+
+.formBox .headingBox > h1{
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 2vmax;
+}
+.formBox {
+    width: 50%;
+    padding-bottom: 3.5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: white;
+    
+}
+
+.formBox > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.contectItem{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* margin: auto; */
+}
+.contectItem > svg{
+    /* position: absolute; */
+    font-size: 2vmax;
+    color: gray;
+
+}
+.contectItem > textarea,
+.contectItem > input{
+    width: 80%;
+    padding: 1vmax;
+    border: 1px solid gray;
+    background-color: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1.1vmax;
+
+}
+.submitBtn{
+    width: 20% !important;
+    background-color: black;
+    color: white;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    border-radius: 2rem !important;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+
+}
+.submitBtn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(110%);
+}
+.contectItem > textarea{
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 7vmax;
+    max-height: 14vmax;
+    
+}
+@media screen and (max-width:600px){
+    .formBox .headingBox > h1{
+        font-size: 4vmax;
+    }
+    .formBox {
+        width: 96%;
+        padding-bottom: 7vmax;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 2rem;
+        background-color: white;
+    }
+    .contectItem > svg{
+        /* position: absolute; */
+        font-size: 2.8vmax;
+        color: gray;
+    
+    }
+    
+    .contectItem > textarea,
+    .contectItem > input{
+        width: 80%;
+        padding: 2vmax;
+        border: 1px solid gray;
+        background-color: none;
+        outline: none;
+        border-radius: 4px;
+        font-size: 2vmax;
+    
+    }
+    .submitBtn{
+        width: 32% !important;
+        background-color: black;
+        color: white;
+        font-size: 1.2vmax;
+        font-weight: 600;
+        border-radius: 2rem !important;
+    
+    }
+}

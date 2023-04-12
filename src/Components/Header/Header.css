@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=textC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body{
+/* background: linear-gradient(var(--bgBody1),var(--bgBody2)); */
+/* background-color: var(--bgBody1); */
+/* background-color: rgb(201, 201, 201); */
+
+}
+:root{
+    --bgBody1: rgb(237, 255, 255) ;
+    --bgBody2: rgb(169, 255, 255) ;
+    --bg3: black;
+    --bg1: rgb(104, 249, 189);
+    --bg2:rgb(10, 124, 156);
+    --textC1:rgb(82, 82, 82);
+    --textC2: white;
+    --border:black;
+    --hoverText:rgb(37, 98, 232);
+    --hoverborder: rgb(37, 98, 232);
+}
+.HeaderContainerMain{
+    border-top: 4px solid gray;
+}
+.logoColor{
+    color: red;
+}
+.logoColor2{
+    color: black;
+}
+.HeaderContainer{
+    width: 100vw;
+    padding: 1.8rem;
+    /* background: linear-gradient(to right ,var(--bg1), var(--bg2)); */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    /* border-top: 2px solid gray; */
+}
+.linkBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.activee{
+    /* background-color: none !important; */
+    border-bottom:  5px solid var(--hoverborder) !important ;
+    color: var(--hoverText) !important;
+}
+
+.linkBox > a{
+    text-decoration: none;
+    font-family: Sansita;
+    color: var(--textC1);
+    border: 2px solid var(--border);
+    padding: 0.5rem 1rem ;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+    text-align: center;
+}
+.linkBox > a:hover{
+    border-bottom:  5px solid var(--hoverborder) ;
+    color: var(--hoverText);
+}
+.iconBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.iconBoxx,
+.iconBox > a{
+    text-decoration: none;
+}
+.iconBox > a> svg{
+    color: var(--textC1);
+    font-size: 1.5vmax;
+    transition: all 0.5s;
+}
+.iconBoxx > a > svg{
+    color: var(--textC1);
+    font-size: 3.5vmax;
+    transition: all 0.5s;
+}
+.iconBoxx > a{
+    margin: 0 1rem;
+}
+.iconBox > a> svg:hover{
+    color: black;
+    /* font-size: 1.5vmax; */
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.menu > svg{
+    font-size: 4vmax;
+}
+.menuContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: 92vh;
+    position: absolute;
+    z-index: 999;
+    /* top: 12vh; */
+    /* background: linear-gradient(var(--bg1), var(--bg2)); */
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.menulogoBox{
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-bottom: 1px solid gray;
+    
+}
+.menulogoBox> p{
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--textC1);
+    font-weight: 600
+}
+.menulinkBox{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 1.5rem;
+    margin: 3rem 0;
+
+}
+.menulinkBox > div{
+}
+.menulinkBox > div > a{
+    width: 100;
+    text-decoration: none;
+    font-family: Sansita;
+    color: var(--textC1);
+    /* border: 2px solid black; */
+    padding: 0.5rem 0.2rem;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.menuiconBox{
+    padding: 0.2rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 1rem 0;
+}
+.menulinkBox > div > a:hover{
+    color: var(--hoverText);
+    padding-left: 0.5rem;
+}
+.hide{
+    transition: all 0.4s ease-in-out;
+    top: -100%;
+}
+.show{
+    transition: all 0.4s ease-in-out;
+    top: 10.8vh;
+}
+.brandName{
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem 0;
+    text-align: center;
+    color: var(--textC1);
+    font-size: 0.8rem;
+}
+
+/* .brandName>h3{
+    width: 100%;
+   
+} */
+
+@media screen and (max-width:952px){
+    .menu{
+        display: block;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    } 
+    .linkBox{
+        display: none;
+    }
+    .iconBox{
+        display: none;
+    }
+    .brandName{
+        width: 100%;
+        text-align: center;
+        color: var(--textC1);
+        font-size: 0.6rem;
+    }
+}
+@media screen and (min-width:952px){
+    .menuContainer{
+        display: none ;
+    }
+}

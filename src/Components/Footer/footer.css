@@ -1,0 +1,205 @@
+.footerContainer{
+    max-width: 100%;
+    width: 100vw;
+    /* height: 50vh; */
+    padding: 3rem 7rem;
+    /* background: linear-gradient(black); */
+    background-color: rgb(15, 15, 15);
+    margin-top: 1vmax;
+    bottom: 0;
+    color: var(--textC2);
+    border-top: 10px solid var(--bg2);
+}
+.topBox{
+    /* padding-top: -2rem; */
+    height: 44vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap ; */
+}
+.downBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem ;
+}
+.downLeftBox{
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.1rem;
+
+}
+
+.downLeftBox>p{
+    color: var(--textC2);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.downLeftBox > p > span{
+    color: var(--textC1);
+}
+
+.downRightBox{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.downRightBox > a {
+    text-decoration: none;
+    color: white;
+}
+
+.downRightBox > a > svg{
+    color: white;
+    transition: 0.5s ease-in; 
+    font-size: 1.6vmax;
+    margin: 0  0.4rem;
+
+} 
+.downRightBox > a > svg:hover{
+    /* background-color: white; */
+    color: rgb(102, 100, 100);
+    transform: scale(1.2);
+
+}
+
+.topBox .box1{
+    width: 30%;
+}
+.box1> div> p{
+    font-family: "Sansita";
+}
+.topBox .box2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+.topBox .box3{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-top: 1rem;
+}
+.Box2heading,
+.Box1heading{
+    width: 80%;
+    padding: 0.4rem 0rem;
+    /* background-color: var(--bg2); */
+    font: 600 1.5rem "Poppins" ;
+    translate: unset;
+    color: rgb(155, 198, 255);
+    margin-bottom: 1rem;
+    /* border-bottom: 5px solid white;     */
+}
+
+.atag{
+    text-decoration: none;
+    color: var(--textC2);
+    font: 500 1rem "Sansita";
+    transition: 0.5s ease-in-out;
+    padding: 0.4rem 0.2rem;
+    margin: 0.2rem 0;
+
+}
+.atag:hover{
+    color: var(--hoverText);
+    padding-left: 0.6rem;
+}
+.colorMidDark{
+    color: var(--textC1);
+}
+
+
+
+.box3 .mapBox{
+    width: 100%;
+    height: 14vmax;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    
+}
+.box3 .logoBox{
+    padding: 1rem;
+    text-align: center;
+}
+.box3> .logoBox> p{
+    font :600 1rem "Poppins";
+    color: var(--textC1);
+}
+
+@media screen and (max-width:952px){
+    .footerContainer{
+        max-width: 100%;
+        width: 100vw;
+        /* height: 50vh; */
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        bottom: 0;
+        color: var(--textC2);
+    }
+
+   .topBox{
+    height: 108vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.downBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem ;
+    gap: 1rem;
+}
+.topBox .box1{
+    width: 100%;
+    /* text-align: center; */
+}
+.topBox .box2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin: 1rem 0;
+}
+.topBox .box3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-top: 0;
+    text-align: center;
+}
+.box3 .mapBox{
+    width: 100%;
+    height: 25vmax;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    
+}
+.downRightBox > a > svg{
+    color: white;
+    transition: 0.5s ease-in; 
+    font-size: 2.6vmax;
+    margin: 0  0.4rem;
+
+} 
+}
+@media screen and (max-width:600px){
+   
+}

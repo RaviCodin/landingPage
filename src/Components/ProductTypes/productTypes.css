@@ -1,0 +1,106 @@
+.ProductTypesContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 2vmax 0;
+}
+.productTypesRow{
+    display: flex;
+    padding: 0.8vmax;
+
+}
+.productTypesItem{
+    width: 50%;
+    height: 57vh;
+    padding: 0.5vmax ;
+}
+.productTypesItemBoxUrl1{
+    background: url(../../images/lavbs_720x.webp);
+}
+.productTypesItemBoxUrl2{
+    background: url(../../images/dropper_bottle_mockup_black_cap_720x.webp);
+}
+.productTypesItemBoxUrl3{
+    background: url(../../images/Untitled_design_23_720x.webp);
+}
+.productTypesItemBoxUrl4{
+    background: url(../../images/coco_1_720x.webp);
+}
+.productTypesItemBox{
+    width: 100%;
+    height: 100%;
+    /* background: url(../../images/banner2.jpeg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 3vmax;
+    border-radius: 0.5vmax;
+    transition: all 1s;
+}
+.productTypesItemBox:hover{
+    box-shadow: 0 1px 10px rgb(39, 39, 39);
+    /* background-position:105%; */
+    background-size: 109%
+    /* transform: ; */
+    /* background-position: center; */
+    
+
+}
+
+
+.productTypesItemBox>h2{
+    color: rgb(55, 55, 55);
+    font-size: 1.8vmax;
+    margin-bottom: 0.4rem;
+}
+.productTypesItemBox > span{
+
+    border: 2px solid rgb(42, 42, 42);
+    padding: 0.3vmax 3.5vmax;
+    border-radius: 2rem;
+    color: rgb(63, 63, 63);
+    font-size: 1.5vmax;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.productTypesItemBox > span:hover{
+    /* color: gray; */
+    padding: 0.3vmax 4vmax;
+}
+
+@media screen and (max-width:600px){
+    .ProductTypesContainer{
+        display: flex;
+        flex-direction: column;
+        margin: 2vmax 0;
+    }
+    .productTypesRow{
+        display: flex;
+        flex-direction: column;
+        padding: 0.8vmax;
+    
+    }
+    .productTypesItem{
+        width: 100%;
+        height: 40vh;
+        padding: 0.5vmax ;
+    }
+    .productTypesItemBox>h2{
+        color: white;
+        font-size: 2.8vmax;
+    }
+    .productTypesItemBox > span{
+    
+        border: 2px solid white;
+        padding: 0.3vmax 3.5vmax;
+        border-radius: 2rem;
+        color: white;
+        font-size: 2.2vmax;
+        font-weight: 500;
+        transition: all 0.5s;
+    }
+    
+}
